@@ -1,0 +1,24 @@
+---
+layout: null
+---
+{
+    "title": {{ page.title | jsonify }},
+    "date": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+    "tags": {{ page.tags | jsonify }},
+    "category": {{ page.categories | jsonify }},
+    "url": {{ post.url | prepend: site.baseurl | jsonify }},
+    "id": {{ page.id | remove_first:'/' | jsonify }},
+    "content": {{ content | jsonify }}
+    {% if page.next.url %}, "next": {
+        "url": {{ page.next.url | prepend: site.baseurl | jsonify }},
+        "title": {{ page.next.title | jsonify }},
+        "date": {{ page.next.date | date: "%Y-%m-%d" | jsonify }},
+        "description": {{ page.next.description | jsonify }}
+    }{% endif %}
+    {% if page.previous.url %},"prev": {
+        "url": {{ page.previous.url | prepend: site.baseurl | jsonify }},
+        "title": {{ page.previous.title | jsonify }},
+        "date": {{ page.previous.date | jsonify }},
+        "description": {{ page.previous.description | jsonify }}
+    }{% endif %}
+}

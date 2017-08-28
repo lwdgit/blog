@@ -1,0 +1,20 @@
+---
+layout: null
+---
+{
+  "posts": [
+  {% for post in paginator.posts %}
+    { 
+      "title": {{ post.title | jsonify }},
+      "id": {{ post.id | remove_first:'/' | jsonify }},
+      "url": {{ post.url | prepend: site.baseurl | jsonify }},
+      "tags": {{ post.tags | jsonify }},
+      "category": {{ post.categories | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "summary": {% if post.content contains site.excerpt_separator %} {{  post.content | split: site.excerpt_separator | first | strip_html | jsonify }} {% else %} {{ post.content | strip_html | truncate: 300 | jsonify }}{% endif %}
+    }{% if forloop.last == false %},{% endif %} 
+  {% endfor %}
+  ]
+  {% if paginator.next_page %},"next": {{ paginator.next_page_path | jsonify }}{% endif %}
+  {% if paginator.previous_page %},"prev": {{ paginator.previous_page_path | jsonify }}{% endif %}
+}
