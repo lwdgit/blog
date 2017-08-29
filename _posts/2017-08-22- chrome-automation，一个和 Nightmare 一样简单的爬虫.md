@@ -190,6 +190,6 @@ MIT
 
 ## 感谢
  
- * [chrome-automation](https://github.com/lwdgit/chrome-automator)
+ * [nightmare](https://github.com/segmentio/nightmare)
  * [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
  * [lighthouse](https://github.com/GoogleChrome/lighthouse) 使用了 lighthosue 的浏览器主动唤起功能
