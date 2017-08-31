@@ -1,6 +1,10 @@
-ssh pi@ip
-password: raspberry
 
+
+ssh pi@192.168.1.100 # 为树莓派被分配的ip，可以在路由器上看到
+password: raspberry
+passwd  # 修改密码
+
+[树莓派启动方式及支持的系统](http://wiki.jikexueyuan.com/project/raspberry-pi/use.html)
 [树莓派3命令行配置wifi无线连接和蓝牙连接](https://www.embbnux.com/2016/04/10/raspberry_pi_3_wifi_and_bluetooth_setting_on_console/)
 [树莓派Pi3设置wifi热点](http://www.jianshu.com/p/1fca72a710d5)
 [树莓派连接WiFi（最稳定的方法)](http://www.52pi.net/archives/58)
