@@ -2,7 +2,8 @@ http://docs.sequelizejs.com/manual/tutorial/associations.html#1-m
 http://www.w3school.com.cn/svg/svg_polygon.asp
 http://benpickles.github.io/peity/
 
-slint-vue-js-fixer
+```
+eslint-vue-js-fixer
 
 // 用于快修复 vue 代码为 standard 风格
 process.env.DEBUG = 'vuefix'
@@ -79,3 +80,4 @@ function vuefix (srcDir, exludeOption, _babel, _style) {
   })
 }
 vuefix('src/', [], false, 'scss')
+```
