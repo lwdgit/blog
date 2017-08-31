@@ -6,3 +6,4 @@ password: raspberry
 http://www.jianshu.com/p/1fca72a710d5
 
 [树莓派连接WiFi（最稳定的方法)](http://www.52pi.net/archives/58)
+[Mac osx如何配置树莓派3 及 远程wifi控制树莓派](http://www.cnblogs.com/tinysun/p/5616132.html)
