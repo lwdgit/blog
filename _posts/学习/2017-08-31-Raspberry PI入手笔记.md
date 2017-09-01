@@ -49,7 +49,7 @@ curl -L https://git.io/n-install | bash
  ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 ```
- > nvm 脚本可能路径可能会经常变更，如以上脚本失效，请访问 [nvm](https://github.com/creationix/nvm/blob/master/README.md)获取最新安装命令。
+ > nvm 脚本可能路径可能会经常变更，如以上脚本失效，请访问 [nvm](https://github.com/creationix/nvm/blob/master/README.md) 获取最新安装命令。
 
 3. 原始安装
 
@@ -91,7 +91,7 @@ npm install
 npm install -g pm2
 pm2 start app.js -- -p 3000
 ```
-此时通过 192.168.1.100:3000 即可访问管理你的 raspberrry。
+此时通过 192.168.1.100:3000 即可访问管理你的 raspberry PI。
 
 
 ![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201709020121631.png)
