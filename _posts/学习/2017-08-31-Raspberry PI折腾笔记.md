@@ -3,6 +3,7 @@
 1. 在 sd 卡上建一个 ssh 目录，开启ssh
 2. 在 cmdline.txt 最前面加上 ip=192.168.1.100 xxxxx 其它内容（注: 100后面有空格，和其它内容分开，192.168.1.100 要求你的电脑分配到的 ip 也是 192.16.1.* 不是的话，可以按照你电脑的 ip 进行微调）
 
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201709020125629.png)
 
 ```
 ssh pi@192.168.1.100 # 为树莓派被分配的ip，可以在路由器上看到
@@ -29,7 +30,7 @@ passwd  # 修改密码
 
 * [树莓派学习笔记——Wifi AP热点模式](http://www.51itong.net/wifi-ap-rt5370-19784.html)
 
-## Node环境安装
+## 环境安装
 
 ### 安装 node 
 
@@ -53,7 +54,7 @@ sudo apt-get update && sudo apt-get install npm
 ```
 > 此方法安装的 nodejs 版本很老，不建议使用。
 
-## 配置
+### 配置node
 1. 权限配置
 
 ```
