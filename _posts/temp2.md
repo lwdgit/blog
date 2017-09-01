@@ -1,7 +1,7 @@
 http://docs.sequelizejs.com/manual/tutorial/associations.html#1-m
 http://www.w3school.com.cn/svg/svg_polygon.asp
 http://benpickles.github.io/peity/
-https://www.base64-image.de/
+'unicode' in RegExp.prototype
 ```
 eslint-vue-js-fixer
 
