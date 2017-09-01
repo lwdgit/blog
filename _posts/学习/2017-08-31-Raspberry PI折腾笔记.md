@@ -16,7 +16,7 @@ passwd  # 修改密码
 
 * [树莓派启动方式及支持的系统](http://wiki.jikexueyuan.com/project/raspberry-pi/use.html)
 
-* [新手买到树莓派之后，如何安装、配置系统？]（https://zhuanlan.zhihu.com/p/25368441）
+* [新手买到树莓派之后，如何安装、配置系统？](https://zhuanlan.zhihu.com/p/25368441)
 
 * [ raspberry pi zero通过usb进行ssh连接](http://blog.csdn.net/talkxin/article/details/53066555)
 
