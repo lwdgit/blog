@@ -61,13 +61,11 @@ sudo apt-get update && sudo apt-get install npm
 
 ### 配置node
 1. 权限配置
-
 ```
 sudo chown -R $(whoami) /usr/local/lib/node_modules /usr/local/bin
 ```
 
 2. 切换淘宝源
-
 ```
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
@@ -86,7 +84,6 @@ npm install -g yarn
 ```
 
 3. 安装远程 pm2 & tty
-
 ```
 git clone https://github.com/krishnasrinivas/wetty
 cd wetty
