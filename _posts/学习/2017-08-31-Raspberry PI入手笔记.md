@@ -40,50 +40,51 @@ passwd  # 修改密码
 
 1. 通过 n 安装
 
-```bash
+ ```bash
 curl -L https://git.io/n-install | bash
 ```
 
 2. 通过 nvm 安装
 
-```bash
+ ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
 ```
-> nvm 脚本可能路径可能会经常变更，如以上脚本失效，请访问 [nvm](https://github.com/creationix/nvm/blob/master/README.md)获取最新安装命令。
+ > nvm 脚本可能路径可能会经常变更，如以上脚本失效，请访问 [nvm](https://github.com/creationix/nvm/blob/master/README.md)获取最新安装命令。
 
 3. 原始安装
 
-```bash
+ ```bash
 sudo apt-get update && sudo apt-get install npm
 ```
 > 此方法安装的 nodejs 版本很老，不建议使用。
 
 ### 配置node
+
 1. 权限配置
-```
+ ```
 sudo chown -R $(whoami) /usr/local/lib/node_modules /usr/local/bin
 ```
 
 2. 切换淘宝源
-```
+ ```
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
 --userconfig=$HOME/.cnpmrc"
 ```
-当然，你也可以直接使用 cnpm
+ 当然，你也可以直接使用 cnpm
 
-```
+ ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
-如果你想用 yarn 
+ 如果你想用 yarn 
 
-```
+ ```
 npm install -g yarn
 ```
 
 3. 安装远程 pm2 & tty
-```
+ ```
 git clone https://github.com/krishnasrinivas/wetty
 cd wetty
 npm install
