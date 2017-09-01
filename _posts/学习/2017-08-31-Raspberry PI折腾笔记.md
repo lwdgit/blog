@@ -4,7 +4,7 @@ ssh pi@192.168.1.100 # 为树莓派被分配的ip，可以在路由器上看到
 password: raspberry
 passwd  # 修改密码
 ```
-
+## wifi设置
 [树莓派启动方式及支持的系统](http://wiki.jikexueyuan.com/project/raspberry-pi/use.html)
 
 [树莓派3命令行配置wifi无线连接和蓝牙连接](https://www.embbnux.com/2016/04/10/raspberry_pi_3_wifi_and_bluetooth_setting_on_console/)
@@ -18,3 +18,20 @@ passwd  # 修改密码
 [[RaspberryPi 3的安装配置]](https://robocoderhan.github.io/2016/12/13/Raspberry%20Pi%203%E7%9A%84%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE/)
 
 [树莓派学习笔记——Wifi AP热点模式](http://www.51itong.net/wifi-ap-rt5370-19784.html)
+
+## Node环境安装
+
+### 安装 node 
+
+1. 通过 n 安装
+
+```bash
+curl -L https://git.io/n-install | bash
+```
+
+2. 通过 nvm 安装
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+```
+> nvm 脚本可能路径可能会经常变更，如以上脚本失效，请访问 [nvm](https://github.com/creationix/nvm/blob/master/README.md)获取最新安装命令。
