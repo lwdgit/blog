@@ -91,6 +91,7 @@ pm2 start app.js -- -p 3000
 此时通过 192.168.1.100:3000 即可访问管理你的 raspberrry。
 
 
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201709020121631.png)
 
 ## 安装 python & go
 
