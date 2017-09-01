@@ -1,4 +1,8 @@
-## 安装前
+---
+title: Raspberry PI入手笔记
+---
+
+## 启动前
 
 1. 在 sd 卡上建一个 ssh 目录，开启ssh
  
