@@ -7,6 +7,10 @@
 ip=192.168.31.110 dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=PARTUUID=a1072ce2-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
 ```
 
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/20170902015667.png)
+
+3. 启动
+
 ```
 ssh pi@192.168.1.100 # 为树莓派被分配的ip，可以在路由器上看到
 password: raspberry # 登录密码默认为 raspberry
@@ -99,4 +103,9 @@ bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/bins
 source ~/.gvm/scripts/gvm
 gvm install go1.8.3
 gvm use go1.8.3
+```
+## 安装 docker
+
+```
+sudo apt-get install docker
 ```
