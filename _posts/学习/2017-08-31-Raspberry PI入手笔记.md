@@ -5,8 +5,8 @@ title: Raspberry PI入手笔记
 ## 启动前
 
 1. 在 sd 卡上建一个 ssh 目录，开启ssh
- 
-![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201709020202445.png)
+ ![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201709020202445.png)
+
 2. 在 cmdline.txt 最前面加上 ip=192.168.1.100 xxxxx 其它内容（注: 100后面有空格，和其它内容分开，192.168.1.100 要求你的电脑分配到的 ip 也是 192.16.1.* 不是的话，可以按照你电脑的 ip 进行微调）,如:
 
 ```
