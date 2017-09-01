@@ -12,7 +12,7 @@ passwd  # 修改密码
 ```
 
 > 参考资料
-* [**无显示器无路由启动树莓派**](http://qiita.com/CoffeeDog/items/d1ad4e53373935701b1a)
+* [**无显示器使用PC远程控制树莓派方案（有线&无线）**](http://qiita.com/CoffeeDog/items/d1ad4e53373935701b1a)
 
 * [树莓派启动方式及支持的系统](http://wiki.jikexueyuan.com/project/raspberry-pi/use.html)
 
