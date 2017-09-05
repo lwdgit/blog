@@ -2,6 +2,9 @@ http://docs.sequelizejs.com/manual/tutorial/associations.html#1-m
 http://www.w3school.com.cn/svg/svg_polygon.asp
 http://benpickles.github.io/peity/
 'unicode' in RegExp.prototype
+
+https://cn.bing.com/HPImageArchive.aspx?format=js&n=1
+
 ```
 eslint-vue-js-fixer
 
