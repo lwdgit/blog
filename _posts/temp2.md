@@ -6,16 +6,12 @@ http://benpickles.github.io/peity/
 https://cn.bing.com/HPImageArchive.aspx?format=js&n=1
 
 ```
-eslint-vue-js-fixer
-
 // 用于快修复 vue 代码为 standard 风格
-process.env.DEBUG = 'vuefix'
 
-const recursive = require('recursive-readdir')
+const glob = require('glob')
 const parser = require('parse5')
 const eslint = require('eslint')
 const fs = require('fs')
-const debug = require('debug')('vuefix')
 
 function eslintfixer (input) {
   let CLIEngine
@@ -31,21 +27,19 @@ function eslintfixer (input) {
     return output
   } catch (err) {
     // Missing `eslint`, `.eslintrc`
-    process.stderr.write(err)
+    process.stderr.write(err.message)
     output = `// eslint-fix ¯\\(°_o)/¯: ${err}\r\n${input}`
   }
   return input
 }
 
-function vuefix (srcDir, exludeOption, _babel, _style) {
-  // return console.log(srcDir, exludeOption, _babel, _style)
-  recursive(srcDir, exludeOption, (err, files) => {
+function vuefix (srcDir, options, _babel, _style) {
+  // return console.log(srcDir, options, _babel, _style)
+  glob(srcDir, options, (err, files) => {
+    if (err) throw new Error(err)
     const vuefiles = files.filter(f => f.match(/\.(vue|js)$/gi))
     vuefiles.forEach((filePath) => {
       const fileContent = fs.readFileSync(filePath, 'utf-8')
-
-      // return debug(filePath)
-      // return debug(fileContent)
       if (filePath.match(/\.js/i)) {
         fs.writeFileSync(filePath, eslintfixer(fileContent))
       } else if (filePath.match(/\.vue/i)) {
@@ -63,11 +57,9 @@ function vuefix (srcDir, exludeOption, _babel, _style) {
               ]
             }
           } else if (node.nodeName === 'style' && _style) {
-            const rel = `stylesheet/${_style}`
             const lang = _style
             const attrs = [
-              {name: 'lang', value: lang},
-              {name: 'rel', value: rel}
+              { name: 'lang', value: lang }
             ]
             // if contain scoped attr
             if (node.attrs.some(item => item.name === 'scoped')) {
@@ -76,11 +68,12 @@ function vuefix (srcDir, exludeOption, _babel, _style) {
             node.attrs = attrs
           }
         }
-        fs.writeFileSync(filePath, parser.serialize(fragment).trim().replace(/\t/g, '  ') + '\n')
+        fs.writeFileSync(filePath, parser.serialize(fragment).trim().replace(/(^\t+)/g, match => '  '.repeat(match.length)) + '\n')
       }
-      debug(filePath, 'has fixed')
+      console.log(filePath, 'has fixed')
     })
   })
 }
-vuefix('src/', [], false, 'scss')
+vuefix('!(node_modules)/**/*.{js,vue}', {}, false, 'scss')
+
 ```
