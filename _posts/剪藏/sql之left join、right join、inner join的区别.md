@@ -62,7 +62,7 @@ NULL　　　　　NULL　　　　　8　　　　　2006032408
 3.inner join
 sql语句如下: 
 select * from A
-innerjoin B 
+inner join B 
 on A.aID = B.bID
 
 结果如下:
