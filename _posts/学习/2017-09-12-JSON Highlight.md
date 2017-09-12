@@ -21,3 +21,5 @@ function syntaxHighlight(json) {
     });
 }
 ```
+
+https://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
