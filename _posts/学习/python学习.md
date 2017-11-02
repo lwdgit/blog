@@ -57,3 +57,7 @@ from numpy import *
 import numpy
 import numpy as np
 from numpy import array, sin
+
+7. 论array的强大性
+
+8. array的虚部不能修改
