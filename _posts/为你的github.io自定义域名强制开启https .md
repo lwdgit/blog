@@ -12,4 +12,17 @@
 
 如果你足够幸运，那么你将会看到如图所示的 Enforce HTTPS 选项，不幸的话，你将会看到
 
-![图片](./2)
+
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201804170112346.png)
+
+抱着试一试的态度，我打开了开发者工具。
+
+
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201804170114993.png)
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201804170114827.png)
+此时按钮已经可以点击，然后我并不抱什么希望的点了一下，
+![图片](https://raw.githubusercontent.com/lwdgit/blog/gh-pages/media/201804170114572.png)
+
+奇迹发生了，github 接受了点击行为，并且做出了响应 **√** 。
+
+于是果断的输入了 blog.wepwa.com，果然chrome下的https错误警告消失了。
